@@ -18,7 +18,23 @@
 function getComputerChoice() {
 
 let chooseNumber = Math.floor(Math.random() * 3);
-console.log(chooseNumber)
+
+switch (chooseNumber) {
+
+case 0:
+alert( "Rock" );
+break;
+
+case 1:
+alert( "Paper" );
+break;
+
+case 2:
+alert( "Scissors" );
+break;
+
+}
+
 }
 
 getComputerChoice()
