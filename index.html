@@ -14,7 +14,7 @@
 
   <script>
 
-let playerChoice = +prompt('Ro Sham Bo - enter Rock, Paper or Scissors', '')
+let playerChoice = "Rock"
 
 // add removeCaps function
 
@@ -42,11 +42,11 @@ break;
 
 
 
-// Compare PlayerChoice and getComputer choice using 'OR' statements for each permutation
+// Something is wrong with PlayerChoice.
 }
 console.log(getComputerChoice())
-if (getComputerChoice === playerChoice) {
-  alert( "Even Stevens - computer chose the same as you" );
+if (playerChoice==getComputerChoice) { //playerChoice and getComputerChoice are not comparing.
+  alert( "Even Stevens" );
 } else {
   alert ( "There's been an error");
 }
