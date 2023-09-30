@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Function library example</title>
+  <style>
+    
+  </style>
+  </head>
+<body>
+
+ 
+
+  <script>
+
+
+    
+
+    function removeCaps() {
+
+      let str = 'hEREcrasfbob';
+      let string = str.toUpperCase();
+      let splitFirstLetter = string.charAt(0)
+      let splitRestofString = string.substr(1)
+      let lowerCaseRestofString = splitRestofString.toLowerCase();
+      let finalOutput = splitFirstLetter + lowerCaseRestofString
+      console.log(finalOutput);
+
+    }
+
+    removeCaps()
+
+    
+
+  
+
+
+  </script>
+</body>
+</html>
