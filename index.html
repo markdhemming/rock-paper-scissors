@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Function library example</title>
+    <title>Ro Sham Bo!</title>
   <style>
     
   </style>
@@ -14,7 +14,7 @@
 
   <script>
 
-let playerChoice = "Rock"
+let playerChoice ="Rock"
 
 // add removeCaps function
 
@@ -25,15 +25,15 @@ let chooseNumber = Math.floor(Math.random() * 3);
 switch (chooseNumber) {
 
 case 0:
-return( "Rock" );
+return("Rock");
 break;
 
 case 1:
-return( "Paper" );
+return("Paper");
 break;
 
 case 2:
-return( "Scissors" );
+return("Scissors");
 break;
 
 }
@@ -45,10 +45,10 @@ break;
 // Something is wrong with PlayerChoice.
 }
 console.log(getComputerChoice())
-if (playerChoice==getComputerChoice) { //playerChoice and getComputerChoice are not comparing.
+if (playerChoice===getComputerChoice()) { //playerChoice and getComputerChoice are not comparing.
   alert( "Even Stevens" );
 } else {
-  alert ( "There's been an error");
+  alert ( "There's been an error" );
 }
 
 
