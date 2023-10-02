@@ -47,8 +47,10 @@ break;
 console.log(getComputerChoice())
 if (playerChoice===getComputerChoice()) {
   alert( "Even Stevens" );
-} else if (playerChoice==="Rock" && getComputerChoice==="Paper") { //this doesn't work
+} else if (playerChoice==="Rock" && getComputerChoice()==="Paper") { //adding the brackets has made this work incorrectly. Does the comp function regenerate each time?
   alert( "Rock beats Paper. Bad luck" );
+} else if (playerChoice==="Rock" && getComputerChoice()==="Scissors") {
+  alert( "Rock beats Scissors. You win" );
 } else {
 
   alert ( "There's been an error" );
