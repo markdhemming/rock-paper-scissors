@@ -42,12 +42,15 @@ break;
 
 
 
-// Something is wrong with PlayerChoice.
+
 }
 console.log(getComputerChoice())
-if (playerChoice===getComputerChoice()) { //playerChoice and getComputerChoice are not comparing.
+if (playerChoice===getComputerChoice()) {
   alert( "Even Stevens" );
+} else if (playerChoice==="Rock" && getComputerChoice==="Paper") { //this doesn't work
+  alert( "Rock beats Paper. Bad luck" );
 } else {
+
   alert ( "There's been an error" );
 }
 
