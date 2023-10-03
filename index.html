@@ -14,7 +14,7 @@
 
   <script>
 
-let playerChoice ="Rock"
+let playerChoice ="Scissors"
 
 // add removeCaps function
 
@@ -48,17 +48,17 @@ console.log(getComputerChoice())
 if (playerChoice===getComputerChoice()) {
   alert( "Even Stevens" );
 } else if (playerChoice==="Rock" && getComputerChoice()==="Paper") { //adding the brackets has made this work incorrectly. Does the comp function regenerate each time?
-  alert( "Bad luck - Rock beats Paper" );
+  alert( "Bad luck - Paper beats Rock" );
 } else if (playerChoice==="Rock" && getComputerChoice()==="Scissors") {
-  alert( "You win - Rock beats Scissors" ); // For 1st char = Y - 1 point for player, if B - one point for comp - E/D 0.
+  alert( "You win - Rock beats Scissors" ); // doesn't work // For 1st char = Y - 1 point for player, if B - one point for comp - E/D 0.
 } else if (playerChoice==="Paper" && getComputerChoice()==="Rock") {
   alert( "You win - Paper beats Rock" );
 } else if (playerChoice==="Paper" && getComputerChoice()==="Scissors") {
-  alert( "Bad luck - Scissors beats Paper" );
+  alert( "Bad luck - Scissors beats Paper" ); // doesn't work
 } else if (playerChoice==="Scissors" && getComputerChoice()==="Rock") {
   alert( "Bad luck - Rock beats Scissors" );
 } else if (playerChoice==="Scissors" && getComputerChoice()==="Paper") {
-  alert( "You win - Scissors beats Paper" );
+  alert( "You win - Scissors beats Paper" ); // doesn't work
 
 
 
