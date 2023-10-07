@@ -20,7 +20,7 @@ function playerChoice() {
 
    return playerPrompt
 
-} // I don't think you returned the value - 'Nan' error
+} 
 
 // add removeCaps function
 
@@ -50,25 +50,25 @@ break;
 
 
 }
-console.log(playerChoice())
+
 
 if (playerChoice()===getComputerChoice()) {
-  alert( "Even Stevens" );
+  alert( "Even Stevens - try again" );
 } else if (playerChoice()==="Rock" && getComputerChoice()==="Paper") { //adding the brackets has made this work incorrectly. Does the comp function regenerate each time?
-  alert( "Bad luck - Paper beats Rock" );
+  alert( "Bad luck - Paper beats Rock" ); // works
 } else if (playerChoice()==="Rock" && getComputerChoice()==="Scissors") {
-  alert( "You win - Rock beats Scissors" ); // doesn't work // For 1st char = Y - 1 point for player, if B - one point for comp - E/D 0.
+  alert( "You win - Rock beats Scissors" ); // doesn't work // For 1st char = Y - 1 point for player e point for comp - E/D 0.
 } else if (playerChoice()==="Paper" && getComputerChoice()==="Rock") {
-  alert( "You win - Paper beats Rock" ); // doesn't work
+  alert( "You win - Paper beats Rock" ); // works
 } else if (playerChoice()==="Paper" && getComputerChoice()==="Scissors") {
-  alert( "Bad luck - Scissors beats Paper" ); 
+  alert( "Bad luck - Scissors beats Paper" ); // works
 } else if (playerChoice()==="Scissors" && getComputerChoice()==="Rock") {
-  alert( "Bad luck - Rock beats Scissors" );
+  alert( "Bad luck - Rock beats Scissors" ); // works
 } else if (playerChoice()==="Scissors" && getComputerChoice()==="Paper") {
   alert( "You win - Scissors beats Paper" ); // doesn't work
 
 // the three that don't work are when player wins. does the logic work for these?? returning result at random
-
+// is it possible playerChoice is 'regenerating' each time it is called? This would explain why Even Stevens is common
 
 
 } else {
