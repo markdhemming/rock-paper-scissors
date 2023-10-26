@@ -17,7 +17,7 @@
 let playerPrompt = prompt ('Type Rock Paper or Scissors','')
 
 function playerChoice() {
-
+  
    return playerPrompt
 
 } 
@@ -31,8 +31,8 @@ let chooseNumber = Math.floor(Math.random() * 3);
 switch (chooseNumber) {
 
 case 0:
-return("Rock");
-break;
+return("Rock"); // what if instead of return("Rock") use let fixedComputerchoice = "Rock"?
+break;          //you'll still have to call the function somehow to 'roll the dice'
 
 case 1:
 return("Paper");
@@ -45,30 +45,24 @@ break;
 }
 
 
-
-
-
-
 }
 
 
 if (playerChoice()===getComputerChoice()) {
   alert( "Even Stevens - try again" );
-} else if (playerChoice()==="Rock" && getComputerChoice()==="Paper") { //adding the brackets has made this work incorrectly. Does the comp function regenerate each time?
-  alert( "Bad luck - Paper beats Rock" ); // works
+} else if (playerChoice()==="Rock" && getComputerChoice()==="Paper") {
+  alert( "Bad luck - Paper beats Rock" ); 
 } else if (playerChoice()==="Rock" && getComputerChoice()==="Scissors") {
-  alert( "You win - Rock beats Scissors" ); // doesn't work // For 1st char = Y - 1 point for player e point for comp - E/D 0.
+  alert( "You win - Rock beats Scissors" ); // For 1st char = Y - 1 point for player e point for comp - E/D 0.
 } else if (playerChoice()==="Paper" && getComputerChoice()==="Rock") {
-  alert( "You win - Paper beats Rock" ); // works
+  alert( "You win - Paper beats Rock" ); 
 } else if (playerChoice()==="Paper" && getComputerChoice()==="Scissors") {
-  alert( "Bad luck - Scissors beats Paper" ); // works
+  alert( "Bad luck - Scissors beats Paper" );
 } else if (playerChoice()==="Scissors" && getComputerChoice()==="Rock") {
-  alert( "Bad luck - Rock beats Scissors" ); // works
+  alert( "Bad luck - Rock beats Scissors" ); 
 } else if (playerChoice()==="Scissors" && getComputerChoice()==="Paper") {
-  alert( "You win - Scissors beats Paper" ); // doesn't work
+  alert( "You win - Scissors beats Paper" ); 
 
-// the three that don't work are when player wins. does the logic work for these?? returning result at random
-// is it possible playerChoice is 'regenerating' each time it is called? This would explain why Even Stevens is common
 
 
 } else {
