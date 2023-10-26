@@ -24,43 +24,28 @@ function playerChoice() {
 
 // add removeCaps function
 
-function getComputerChoice() {
-
-let chooseNumber = Math.floor(Math.random() * 3);
-
-switch (chooseNumber) {
-
-case 0:
-return("Rock"); // what if instead of return("Rock") use let fixedComputerchoice = "Rock"?
-break;          //you'll still have to call the function somehow to 'roll the dice'
-
-case 1:
-return("Paper");
-break;
-
-case 2:
-return("Scissors");
-break;
-
-}
 
 
-}
+let options = ["Rock", "Paper", "Scissors"] 
+let computerChoice = options[Math.floor(Math.random()*options.length)];
 
 
-if (playerChoice()===getComputerChoice()) {
+
+
+
+if (playerChoice()===computerChoice) {
   alert( "Even Stevens - try again" );
-} else if (playerChoice()==="Rock" && getComputerChoice()==="Paper") {
+} else if (playerChoice()==="Rock" && computerChoice==="Paper") {
   alert( "Bad luck - Paper beats Rock" ); 
-} else if (playerChoice()==="Rock" && getComputerChoice()==="Scissors") {
+} else if (playerChoice()==="Rock" && computerChoice==="Scissors") {
   alert( "You win - Rock beats Scissors" ); // For 1st char = Y - 1 point for player e point for comp - E/D 0.
-} else if (playerChoice()==="Paper" && getComputerChoice()==="Rock") {
+} else if (playerChoice()==="Paper" && computerChoice==="Rock") {
   alert( "You win - Paper beats Rock" ); 
-} else if (playerChoice()==="Paper" && getComputerChoice()==="Scissors") {
+} else if (playerChoice()==="Paper" && computerChoice==="Scissors") {
   alert( "Bad luck - Scissors beats Paper" );
-} else if (playerChoice()==="Scissors" && getComputerChoice()==="Rock") {
+} else if (playerChoice()==="Scissors" && computerChoice==="Rock") {
   alert( "Bad luck - Rock beats Scissors" ); 
-} else if (playerChoice()==="Scissors" && getComputerChoice()==="Paper") {
+} else if (playerChoice()==="Scissors" && computerChoice==="Paper") {
   alert( "You win - Scissors beats Paper" ); 
 
 
