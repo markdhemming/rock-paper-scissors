@@ -18,11 +18,20 @@ let playerPrompt = prompt ('Type Rock Paper or Scissors','')
 
 function playerChoice() {
   
-   return playerPrompt
+   
+  
+let str = playerPrompt;
+let string = str.toUpperCase();
+let splitFirstLetter = string.charAt(0)
+let splitRestofString = string.substr(1)
+let lowerCaseRestofString = splitRestofString.toLowerCase();
+let finalOutput = splitFirstLetter + lowerCaseRestofString
+return finalOutput
+  
 
 } 
 
-// add removeCaps function
+
 
 
 
