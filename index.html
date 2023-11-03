@@ -13,8 +13,7 @@
  
 
   <script>
-let computerScore = 0
-let playerScore = 0
+
 
 
 
@@ -37,8 +36,8 @@ return finalOutput
 
 } 
 
-
-
+let computerScore = 0
+let playerScore = 0
 
 
 let options = ["Rock", "Paper", "Scissors"] 
@@ -49,25 +48,25 @@ let computerChoice = options[Math.floor(Math.random()*options.length)];
 
 
 if (playerChoice()===computerChoice) {
-  alert( "Even Stevens - try again" );
+  alert ( "Even Stevens" );
 } else if (playerChoice()==="Rock" && computerChoice==="Paper") {
-  computerScore+=1; 
+  ++computerScore; 
   alert( "Bad luck - Paper beats Rock" ); 
 } else if (playerChoice()==="Rock" && computerChoice==="Scissors") {
   alert( "You win - Rock beats Scissors" );
-  playerScore+=1;
+  ++playerScore;
 } else if (playerChoice()==="Paper" && computerChoice==="Rock") {
   alert( "You win - Paper beats Rock" );
-  playerScore+=1; 
+  ++playerScore; 
 } else if (playerChoice()==="Paper" && computerChoice==="Scissors") {
-  computerScore+=1;
+  ++computerScore;
   alert( "Bad luck - Scissors beats Paper" );
 } else if (playerChoice()==="Scissors" && computerChoice==="Rock") {
-  computerScore+=1;
+  ++computerScore;
   alert( "Bad luck - Rock beats Scissors" ); 
 } else if (playerChoice()==="Scissors" && computerChoice==="Paper") {
   alert( "You win - Scissors beats Paper" );
-  playerScore+=1; 
+  ++playerScore; 
 // can't add to variable outside function. Test inside to see if works and then try again?
 
 } else {
@@ -75,7 +74,7 @@ if (playerChoice()===computerChoice) {
   alert ( "Did you type that correctly?" );
 }
 
-
+console.log(playerScore, computerScore)
 } 
 
 // add loop???
@@ -84,7 +83,7 @@ function game() {
 
   
 
-    console.log(playerScore, computerScore)
+    
     playRound()
     // Either ++ is not working or the functions can't access playerScore
     playRound()
