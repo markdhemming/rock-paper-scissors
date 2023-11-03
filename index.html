@@ -48,17 +48,23 @@ let computerScore = 0
 if (playerChoice()===computerChoice) {
   alert( "Even Stevens - try again" );
 } else if (playerChoice()==="Rock" && computerChoice==="Paper") {
-  alert( "Bad luck - Paper beats Rock" ); 
+  alert( "Bad luck - Paper beats Rock" );
+  computerScore++; 
 } else if (playerChoice()==="Rock" && computerChoice==="Scissors") {
-  alert( "You win - Rock beats Scissors" ); // For 1st char = Y - 1 point for player e point for comp - E/D 0.
+  alert( "You win - Rock beats Scissors" );
+  playerScore++;
 } else if (playerChoice()==="Paper" && computerChoice==="Rock") {
-  alert( "You win - Paper beats Rock" ); 
+  alert( "You win - Paper beats Rock" );
+  playerScore++; 
 } else if (playerChoice()==="Paper" && computerChoice==="Scissors") {
   alert( "Bad luck - Scissors beats Paper" );
+  computerScore++;
 } else if (playerChoice()==="Scissors" && computerChoice==="Rock") {
-  alert( "Bad luck - Rock beats Scissors" ); 
+  alert( "Bad luck - Rock beats Scissors" );
+  computerScore++; 
 } else if (playerChoice()==="Scissors" && computerChoice==="Paper") {
-  alert( "You win - Scissors beats Paper" ); 
+  alert( "You win - Scissors beats Paper" );
+  playerScore++; 
 
 //might want to return instead of alert? 'console.log' result? YES!!!
 
@@ -85,7 +91,7 @@ function game() {
 
 }
 
-  
+  game()
 
 
   </script>
