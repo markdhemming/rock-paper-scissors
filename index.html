@@ -13,6 +13,10 @@
  
 
   <script>
+    
+let computerScore = 0
+let playerScore = 0
+
 
 function playRound() {
  
@@ -41,8 +45,7 @@ let options = ["Rock", "Paper", "Scissors"]
 let computerChoice = options[Math.floor(Math.random()*options.length)];
 
 
-let playerScore = 0
-let computerScore = 0
+
 
 
 if (playerChoice()===computerChoice) {
@@ -82,7 +85,8 @@ function game() {
 
 
     playRound()
-    // you need to return the result and log it somehow (let compScore/playerScore) using '++' or similar
+    console.log(playerScore, computerScore)
+    // Either ++ is not working or the functions can't access playerScore
     playRound()
     playRound()
     playRound()
