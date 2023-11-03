@@ -41,7 +41,8 @@ let options = ["Rock", "Paper", "Scissors"]
 let computerChoice = options[Math.floor(Math.random()*options.length)];
 
 
-
+let playerScore = 0
+let computerScore = 0
 
 
 if (playerChoice()===computerChoice) {
@@ -73,8 +74,7 @@ if (playerChoice()===computerChoice) {
     
 function game() {
 
-let playerScore = 0
-let computerScore = 0
+
     playRound()
     // you need to return the result and log it somehow (let compScore/playerScore) using '++' or similar
     playRound()
