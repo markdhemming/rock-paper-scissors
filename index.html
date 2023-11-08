@@ -85,12 +85,21 @@ function game() {
 
     console.log(playerScore, computerScore)
     playRound()
-    // Either ++ is not working or the functions can't access playerScore
     playRound()
     playRound()
     playRound()
     playRound()
+if (playerScore > computerScore) {
+  alert ("You beat the computer!");
+}
 
+else if (computerScore > playerScore) {
+  alert ("Back luck, computer wins!");
+}
+
+else {
+  alert ("Draw! Try again?")
+}
 
 }
 
